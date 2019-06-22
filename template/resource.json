@@ -1,0 +1,5 @@
+{
+    "team": "{{.Project.Team}}",
+    "name": "{{.Project.Name}}",
+    "description": "{{.Project.Description}}"
+}

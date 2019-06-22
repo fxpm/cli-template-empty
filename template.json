@@ -1,0 +1,40 @@
+{
+    "name": "empty",
+    "description": "An empty FX Server resource with the bare minimum.",
+    "questions": [
+        {
+            "map": "project.team",
+            "type": "Input",
+            "options": {
+                "message": "FXPM Team",
+                "help": "The FXPM Team is the namespace the project belongs to, this is created at fxpm.sh."
+            },
+            "validate": {
+                "required": true,
+                "minLength": 3,
+                "maxLength": 64
+            }
+        },
+        {
+            "map": "project.name",
+            "type": "Input",
+            "options": {
+                "message": "Resource Name",
+                "help": "The slugified-name of your resource. This is used by the CLI to install a package."
+            },
+            "validate": {
+                "required": true,
+                "minLength": 3,
+                "maxLength": 32
+            }
+        },
+        {
+            "map": "project.description",
+            "type": "Input",
+            "options": {
+                "message": "Resource Description",
+                "help": "A short description of the resource used to help users understand its purpose."
+            }
+        }
+    ]
+}
